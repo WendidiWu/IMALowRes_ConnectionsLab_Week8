@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    </link>
+    <title>Virtual Garden</title>
+</head>
+
+<body>
+    <h1 class="chat-header">&#127803 Virtual Garden</h1>
+    <div class="container">
+        <!-- View messages here -->
+        <div class="sub-container chat-feed">
+            <div class="chat-box" id="chat-box-msgs"></div>
+        </div>
+
+        <!-- Enter chat messages here -->
+        <div class="sub-container chat-input">
+            <input type="text" class="chat-input-name" id="name-input" placeholder="Name" />
+            
+            
+            <select id="dropdownMenu">
+                <option disabled selected>Seeds</option> 
+                <option value="Option1">&#127799</option>
+                <option value="Option2">&#127803</option>
+                <option value="Option3">&#127793</option>
+             </select>
+
+            <input type="text" class="chat-input-msg" id="msg-input" placeholder="Leave a message here..." />
+            <button id="send-button">Plant</button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
